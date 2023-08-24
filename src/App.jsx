@@ -86,7 +86,7 @@ const getDriversDetails = async ()=>{
 
   const getDetails = async () => {
     try {
-      const res = await axios.get("http://ergast.com/api/f1/2023");
+      const res = await axios.get("https://ergast.com/api/f1/2023");
 
       let parsedXml = new XMLParser().parseFromString(res.data);
 
@@ -274,7 +274,7 @@ const getDriversDetails = async ()=>{
         <Navbar />
         <Routes>
           <Route
-            path="/CountDown-F1"
+            path="/Formula1App"
             element={
               <Home
                 dets={dets}
@@ -285,11 +285,11 @@ const getDriversDetails = async ()=>{
             }
           />
           <Route
-            path="/CountDown-F1/Team-Constructors"
+            path="/Formula1App/Team-Constructors"
             element={<Construtors data={constructorsDetails} />}
           />
           <Route
-            path="/CountDown-F1/Seasons"
+            path="/Formula1App/Seasons"
             element={
               <Seasons
                 raceDetails={raceDetails}
@@ -297,7 +297,7 @@ const getDriversDetails = async ()=>{
               />
             }
           />
-          <Route path="/CountDown-F1/Driver-Standings" element={<Drivers data = {driversDetails} />} />
+          <Route path="/Formula1App/Driver-Standings" element={<Drivers data = {driversDetails} />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
         <Footer />

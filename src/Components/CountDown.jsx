@@ -20,7 +20,7 @@ const CountDown = (props) => {
     const countDownTimer = () => {
         try {
 
-            if (values !== []) {
+            if (values.length != 0 ) {
                 let utcTime = new Date(values[0].events[session].date + " " + values[0].events[session].time);
 
 
