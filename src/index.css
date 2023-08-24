@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --bg: #1e1e20;
+    --navbg: #1e1e20;
+}
+
+
+
+body {
+    background-color: whitesmoke;
+    /* color: #8d89dc; */
+}
+/* 
+.red {
+    border: 2px solid red;
+}
+
+.blue {
+    border: 2px solid blue;
+}
+
+
+.temp {
+    border: 2px solid red;
+} */
+
+.completed {
+    text-decoration: line-through;
+}
+
+.navbar {
+    background-color: var(--navbg);
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    width: 100% !important;
+}
+
+.navbar-brand {
+
+
+    color: #b0aee2;
+    padding: 10px;
+
+}
+
+.nav-items {
+    display: flex !important;
+    flex-direction: row !important;
+
+
+}
+
+.navbar-brand:hover {
+    background-color: #8d89dc !important;
+    color: black !important;
+}
+
+.season-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
+.season {
+    margin-top: 15px;
+    width: 40vw;
+    margin-bottom: 30px;
+}
+
+
+.countdown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 0.3);
+}
+
+.countdown img {
+    width: 100%;
+    z-index: -1;
+    left: 0px;
+}
+
+.countdown-child {
+    width: 50vw;
+    position: absolute;
+    top: 130px;
+}
+
+.uprace {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    background-color: rgb(245, 245, 245, 0.8);
+    border: 2px solid rgba(14, 30, 37, 0.12);
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.driver-details-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.season-wrapper section {
+    margin-bottom: 30px;
+}
+
+.driver-details-collapse-head {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.driver-details-ul div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+    padding: 0px;
+    font-family: lato;
+    font-size: larger;
+}
+
+.race-details-collapse-head {
+
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+
+
+}
+
+.race-details-collapse div {
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+
+.race-details-ul {
+    margin-left: 0px;
+    margin-top: 15px;
+
+
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+
+.race-details-ul .caption {
+    font-weight: 600;
+
+}
+
+.race-details-ul li {
+
+    padding: 2px;
+    margin-left: -15px !important;
+    width: 100% !important;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    font-size: large;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 400;
+
+
+
+}
+
+
+.cnstr-list {
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    
+    width: 100vw !important;
+    margin-top: 15px;
+
+}
+
+.cnstr-list ul {
+    margin: 0px;
+    width: 100vw;
+
+
+}
+
+.cnstr-list ul li {
+    list-style: none;
+
+
+}
+
+
+
+
+
+.body-cnstr ul li {
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+
+.timer-ul {
+    font-family: 'Orbitron', sans-serif;
+
+    background-color: rgb(245, 245, 245, 0.6);
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap !important;
+    flex-direction: row;
+}
+
+.timer-ul li {
+    font-size: 3rem !important;
+}
+
+.times {
+
+    border: 2px solid var(--navbg);
+    background-color: var(--navbg);
+    padding-left: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-right: 4px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.timer-ul li {
+
+    list-style-type: none;
+
+    margin: 5px;
+    padding: 2px;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.footer {
+    background-color: var(--navbg);
+
+    position: absolute;
+    width: 100%;
+}
+
+
+.alert {
+    font-size: 1.5rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    width: fit-content;
+    padding: 5px;
+    position: relative;
+    top: 45px;
+    /* border: 2px solid ; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    left: -90px !important;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .countdown {
+        height: 75vh;
+    }
+
+    .countdown img {
+        /* display: none; */
+        height: 100vh;
+        width: max-content !important;
+
+        z-index: -1;
+        left: 0px;
+        width: 100vw;
+
+    }
+
+    .footer {
+        background-color: var(--navbg);
+        bottom: -120px;
+        position: absolute;
+        width: 100%;
+    }
+
+
+    .countdown {
+        padding: 0px;
+    }
+
+    .countdown-child {
+        width: 90vw;
+    }
+
+    .uprace {
+        font-size: 1.7rem;
+    }
+
+    .countdown-child ul li {
+        font-size: 1.5rem !important;
+    }
+
+    .cnstr-list ul li img {
+
+        width: 100%;
+
+    }
+
+    .alert {
+        font-size: 1rem;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        width: fit-content;
+        padding: 5px;
+        position: relative;
+        top: 25px;
+        /* border: 2px solid ; */
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        left: -25px !important;
+    }
+
+    .season {
+        width: 87vw;
+        margin-bottom: 30px;
+    }
+
+    .driver-details-collapse-head {
+        width: 87vw;
+
+
+    }
+
+    .countdown-child {
+
+        position: absolute;
+        top: 150px;
+}
+
+
+}
