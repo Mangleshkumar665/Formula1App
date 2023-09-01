@@ -84,6 +84,7 @@ body {
 }
 
 .countdown img {
+    height: 100%;
     width: 100%;
     z-index: -1;
     left: 0px;
@@ -93,6 +94,11 @@ body {
     width: 50vw;
     position: absolute;
     top: 130px;
+}
+
+.count-main{
+    border: 2px solid red !important;
+
 }
 
 .uprace {
@@ -302,7 +308,7 @@ body {
 @media screen and (max-width:800px) {
 
     .countdown {
-        height: 75vh;
+        height: 100%;
     }
 
     .countdown img {
@@ -318,7 +324,7 @@ body {
 
     .footer {
         background-color: var(--navbg);
-        bottom: -120px;
+        /* bottom: -120px; */
         position: absolute;
         width: 100%;
     }

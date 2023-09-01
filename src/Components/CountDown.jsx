@@ -22,9 +22,6 @@ const CountDown = (props) => {
 
             if (values.length != 0 ) {
                 let utcTime = new Date(values[0].events[session].date + " " + values[0].events[session].time);
-
-
-
                 let targetTime = utcTime.toLocaleString('en-IN', { hour12: false, timeZone: 'Asia/Kolkata' });
                 let year = targetTime.split(" ")[0].split("/")[2];
                 let month = targetTime.split(" ")[0].split("/")[1];
@@ -33,29 +30,23 @@ const CountDown = (props) => {
 
                 let mins = targetTime.split(" ")[1].split(":")[1];
                 let secs = targetTime.split(" ")[1].split(":")[2];
-
-
-                let countDownDate = new Date(`${month} ${day},${year} ${hours}:${mins}:${secs}`)
-
+                let countDownDate = new Date(`${month} ${day},${year} ${hours}:${mins}:${secs}`);
 
 
                 interval = setInterval(() => {
-                    let now = new Date().getTime()
+                    let now = new Date().getTime();
                     let distance = countDownDate - now;
-                    let days = Math.floor(distance / (24 * 60 * 60 * 1000))
-                    let hours = Math.floor(distance % (24 * 60 * 60 * 1000) / (1000 * 60 * 60))
-
+                    let days = Math.floor(distance / (24 * 60 * 60 * 1000));
+                    let hours = Math.floor(distance % (24 * 60 * 60 * 1000) / (1000 * 60 * 60));
                     let mins = Math.floor(distance % (60 * 60 * 1000) / (1000 * 60));
-
                     let secs = Math.floor(distance % (60 * 1000) / (1000));
-
                     if (distance < 0) {
-                        clearInterval(interval.current)
+                        clearInterval(interval.current);
                     } else {
-                        setDays(days)
-                        setHours(hours)
-                        setMins(mins)
-                        setSecs(secs)
+                        setDays(days);
+                        setHours(hours);
+                        setMins(mins);
+                        setSecs(secs);
                     }
                 });
             }
@@ -80,7 +71,7 @@ const CountDown = (props) => {
 
 
             <div className="alert alert-dark" role="alert">
-                Next Race -
+                Next Race in -
             </div>
 
             <div className='uprace'>    {leftRaces[0].Name} </div>

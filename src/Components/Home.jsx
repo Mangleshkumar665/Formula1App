@@ -15,7 +15,7 @@ const Home = (props) => {
 
             <div className='countdown d-flex justify-content-center '>
                 <img src={back} alt="" />
-                <CountDown className="count-main" leftRaces={props.dets.filter(
+                <CountDown className="count-main " leftRaces={props.dets.filter(
                     (data) => {
                         return !data.completed;
                     }
